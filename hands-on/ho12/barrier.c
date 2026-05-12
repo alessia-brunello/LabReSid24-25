@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "barrier.h"
 
 void barrier_init(barrier_t* b, int n) {

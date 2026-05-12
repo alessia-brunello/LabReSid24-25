@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
 #include <unistd.h>
@@ -20,7 +19,7 @@ void* worker(void* arg) {
 
 int main(int argc, char* argv[]) {
 	if(argc != 2) {
-		printf("Devi inserire quanti therad far partire: %s N\n", argv[0]);
+		printf("Devi inserire quanti thread far partire: %s N\n", argv[0]);
 		return 1;
 	}
 

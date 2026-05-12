@@ -11,7 +11,7 @@ void buffer_init(buffer_t* b) {
 
 void buffer_insert(buffer_t* b, int item) {
 	sem_wait(&b->empty);
-	sem_post(&b->mutex);
+	sem_wait(&b->mutex);
 
 	b->buffer[b->in] = item;
 	b->in = (b->in + 1) % BUFFER_SIZE;

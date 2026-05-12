@@ -27,7 +27,7 @@ int main() {
 	pthread_create(&tD, NULL, calc_D, &d_data);
 	pthread_join(tD, (void**)&D);
 
-	printf("\nD = A * B --> %d\n", *D);
+	printf("\nD = B * C --> %d\n", *D);
 
 	//Y dipende da A e D
 	data_Y y_data = {*A, *D};
@@ -36,7 +36,7 @@ int main() {
 	pthread_join(tY, (void**)&Y);
 
 	printf("\nRisultato finale\n");
-	printf("\nY = D - A --> %d\n", *Y);
+	printf("\nY = A + D --> %d\n", *Y);
 
 	//per liberare memoria
 	free(A); free(B); free(C); free(D); free(Y);

@@ -1,6 +1,7 @@
 #ifndef BARRIER_H
 #define BARRIER_H
 
+#include <stdio.h>
 #include <semaphore.h>
 
 

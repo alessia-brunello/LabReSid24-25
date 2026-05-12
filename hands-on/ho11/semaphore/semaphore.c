@@ -37,9 +37,9 @@ static void leave_limited_area(int thread_id) {
 }
 
 static void use_shared_resource(int thread_id){
-	printf("[Thread %d] sta usando la risorsa condivisa\n\n", thread_id);
+	printf("[Thread %d] è entrato nella sezione critica\n\n", thread_id);
 	sleep(2);
-	printf("[Thread %d] ha terminato l'uso della risorsa condivisa\n\n", thread_id);
+	printf("[Thread %d] sta uscendo dalla sezione critica\n\n", thread_id);
 }
 
 

@@ -1,4 +1,4 @@
-#ifndef MUTEX_X
+#ifndef MUTEX_H
 #define MUTEX_H
 
 void run_mutex(void);
