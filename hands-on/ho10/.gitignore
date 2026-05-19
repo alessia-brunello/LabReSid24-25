@@ -1,0 +1,21 @@
+#file oggetto C
+*.o
+
+#Eseguibili generati dal make
+programma
+
+#file temporanei
+*~
+.DS_Store
+
+# File generati da LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
