@@ -1,0 +1,33 @@
+# File oggetto e binari C
+*.o
+*.out
+*.exe
+flooding_fifo
+
+# File temporanei delle FIFO, se mai creati nella cartella locale
+lab15_fifo_*
+
+# Output e file temporanei
+output.txt
+risultato_finale.txt
+*.log
+
+# File temporanei LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# Cartelle di build
+build/
+dist/
+
+# File di sistema/editor
+.DS_Store
+.vscode/
+.idea/
