@@ -1,0 +1,17 @@
+# File oggetto compilati
+*.o
+
+# Eseguibili
+bellman_ford
+
+# FIFO create durante l'esecuzione
+fifo_*
+fifo_result
+
+# File temporanei/editor
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/
+.idea/
