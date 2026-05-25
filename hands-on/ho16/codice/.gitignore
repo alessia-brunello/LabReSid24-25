@@ -1,0 +1,17 @@
+# File oggetto e binari compilati
+*.o
+*.out
+leader_election
+
+# File temporanei/editor
+*~
+.DS_Store
+.vscode/
+.idea/
+
+# Output e log
+*.log
+output*.txt
+
+# FIFO temporanee del progetto
+/tmp/ho16_fifo_*
