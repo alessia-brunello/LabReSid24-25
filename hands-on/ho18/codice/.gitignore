@@ -1,0 +1,65 @@
+# Python
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambienti virtuali
+.venv/
+venv/
+env/
+
+# Cache e test
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Ray
+/tmp/ray/
+ray_results/
+session_*/
+logs/
+
+# File generati dal programma
+
+word_count.txt
+*_count.txt
+*.out
+
+
+# Dataset / file grandi
+lotr.txt
+
+# zip o dataset scaricati
+*.zip
+*.csv
+
+
+# LaTeX / Overleaf
+
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+
+
+# Editor / Sistema operativo
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
