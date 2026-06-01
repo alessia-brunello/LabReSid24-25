@@ -1,0 +1,54 @@
+# Ambiente virtuale Python
+.venv/
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# File temporanei / cache
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Dataset scaricati
+data/
+MNIST/
+
+# File temporanei di Ray
+.ray_tmp/
+ray_results/
+session_*/
+logs/
+
+# File prodotti da training o esperimenti
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+
+# Cache di strumenti Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# File di sistema/editor
+.vscode/
+.idea/
+
+# Output LaTeX, se si compila il report localmente
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
