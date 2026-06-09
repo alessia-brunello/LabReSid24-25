@@ -1,6 +1,6 @@
 # TicketFlow REST Server
 
-## Introduzione
+
 
 **TicketFlow REST Server** è il progetto finale realizzato per il corso di **Laboratorio di Reti e Sistemi Distribuiti**.
 
@@ -96,24 +96,7 @@ final-544964/
 | Test                   | Bash, curl |
 | Sistema operativo      | Linux      |
 
----
 
-## Funzionalità implementate
-
-| Funzionalità            | Descrizione                                                                   |
-| ----------------------- | ----------------------------------------------------------------------------- |
-| Server TCP              | Il server accetta connessioni tramite socket TCP.                             |
-| Parsing HTTP            | Le richieste vengono interpretate manualmente.                                |
-| Routing REST            | Le richieste vengono smistate in base a metodo e URI.                         |
-| CRUD ticket             | Sono supportate creazione, lettura, aggiornamento ed eliminazione dei ticket. |
-| Risposte JSON           | Le risposte del server sono restituite in formato JSON.                       |
-| SQLite                  | I ticket vengono salvati in un database locale persistente.                   |
-| `epoll`                 | Il server gestisce più connessioni in modo concorrente.                       |
-| Connessione persistente | Il client può inviare più richieste sulla stessa connessione TCP.             |
-| Timeout                 | Le connessioni inattive vengono chiuse automaticamente.                       |
-| Client interattivo      | È presente un client da terminale con menu testuale.                          |
-| Test funzionali         | Sono presenti script per verificare le principali operazioni REST.            |
-| Test di carico          | È presente uno script per testare il comportamento con più richieste.         |
 
 ---
 
@@ -129,19 +112,6 @@ data/ticketflow.db
 
 Il file `data/ticketflow.db` non viene caricato nella repository, perché viene generato durante l'esecuzione del server.
 La cartella `data/` viene mantenuta tramite il file `.gitkeep`.
-
----
-
-## Endpoint principali
-
-| Metodo   | Endpoint        | Descrizione                            |
-| -------- | --------------- | -------------------------------------- |
-| `GET`    | `/health`       | Verifica lo stato del server.          |
-| `GET`    | `/tickets`      | Restituisce la lista dei ticket.       |
-| `POST`   | `/tickets`      | Crea un nuovo ticket.                  |
-| `GET`    | `/tickets/{id}` | Restituisce il dettaglio di un ticket. |
-| `PUT`    | `/tickets/{id}` | Aggiorna un ticket esistente.          |
-| `DELETE` | `/tickets/{id}` | Elimina un ticket.                     |
 
 ---
 
