@@ -102,16 +102,11 @@ Nel repository sono state utilizzate diverse tecnologie e librerie, in base alla
 | ---------- | --------------------------------------------------------------------------------------- |
 | C          | Implementazione degli handson basati su socket, processi, FIFO e algoritmi distribuiti. |
 | Python     | Implementazione degli esercizi basati su MapReduce e Federated Learning.                |
-| Socket TCP | Comunicazione client-server.                                                            |
-| FIFO       | Comunicazione tra processi in alcuni handson.                                           |
-| Makefile   | Compilazione ed esecuzione dei programmi.                                               |
-| SQLite     | Backend persistente del progetto finale.                                                |
-| `epoll`    | Gestione concorrente delle connessioni nel server REST.                                 |
 | Ray        | Esecuzione distribuita negli handson Python.                                            |
 | PyTorch    | Addestramento del modello nel progetto di Federated Learning.                           |
-| Bash       | Script di test e automazione.                                                           |
-| LaTeX      | Stesura delle relazioni tecniche.                                                       |
-
+| Mininet, Wireshark | Utilizzati per la simulazione di topologie di rete e analisi del traffico       |
+| LaTeX      | Usato per le relazioni tecniche.                                                        |
+| Beamer     | Usato per le presentazioni                                                              |
 ---
 
 ## Come eseguire
