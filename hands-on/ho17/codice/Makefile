@@ -23,3 +23,5 @@ run: all
 clean:
 	rm -f $(TARGET) $(OBJS)
 	rm -f fifo_* fifo_result
+	
+.PHONY: all run clean

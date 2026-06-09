@@ -1,0 +1,65 @@
+
+# Compiled binary
+ticketflow
+ticketflow_client
+
+#Object files / compiled files
+*.o
+*.out
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+
+
+# SQLite database files
+data/*.db
+data/*.db-shm
+data/*.db-wal
+*.sqlite
+*.sqlite3
+
+
+# Temporary files
+
+*~
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+
+# macOS files
+.DS_Store
+
+
+# Linux trash / thumbnails
+.Trash-*
+.directory
+
+
+
+# VS Code
+.vscode/
+
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+
+
+# Valgrind output
+vgcore.*
+
+
+
+# Logs
+*.log
+
+
+# Keep data folder structure
+!data/.gitkeep
