@@ -40,11 +40,7 @@ inspect: $(SERVER_TARGET)
 	@file $(SERVER_TARGET)
 	@echo "\nlibrerie dinamiche: ldd"
 	@ldd $(SERVER_TARGET)
-	@echo "\nELF header: readelf -h"
-	@readelf -h $(SERVER_TARGET)
-	@echo "\nSezioni ELF: readelf -S"
-	@readelf -S $(SERVER_TARGET)
-
+	
 clean:
 	rm -f $(SERVER_OBJS) $(CLIENT_OBJS) $(DEPS) $(SERVER_TARGET) $(CLIENT_TARGET)
 
