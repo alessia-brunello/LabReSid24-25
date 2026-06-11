@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Iinclude -pthread -MMD -MP
+CFLAGS = -Wall -Wextra -Iinclude -MMD -MP
 SERVER_TARGET = ticketflow
 CLIENT_TARGET = ticketflow_client
 
