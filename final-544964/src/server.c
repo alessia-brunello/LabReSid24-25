@@ -380,7 +380,7 @@ static int handle_client_input(int epoll_fd, ClientSession* session) {
                 size_t available = BUFFER_SIZE - session->request_size - 1;
                 
                 if(available == 0) {
-                        return queue_protocol_error(epoll_fd, session, 413, "Payload Too Large", "{\"error\":\"IRequest too large\"}\n");
+                        return queue_protocol_error(epoll_fd, session, 413, "Payload Too Large", "{\"error\":\"Request too large\"}\n");
                 }
                 
                 received = recv(session->fd, session->request_buffer + session->request_size, available, 0);

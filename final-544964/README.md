@@ -178,7 +178,8 @@ curl -X POST http://localhost:8080/tickets \
     "description": "Connessione non disponibile",
     "location": "Aula 1",
     "category": "network",
-    "priority": "high"
+    "priority": "high",
+    "status": "open"
   }'
 ```
 

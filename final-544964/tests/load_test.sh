@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_URL="http://localhost:8080"
+URL="http://localhost:8080/tickets"
 
 echo "----------------------------------"
 echo "TicketFlow REST Server - Load Test"
@@ -21,24 +21,20 @@ if ! command -v ab > /dev/null 2>&1; then
 	exit 1
 fi
 
-echo "[1] Test leggero: 100 richieste, 10 concorrenti"
-ab -n 100 -c 10 "$BASE_URL/tickets"
+echo "[1] Test medio: 500 richieste, 25 concorrenti"
+ab -k -n 500 -c 20 $URL
 echo
 
-echo "[2] Test medio: 500 richieste, 25 concorrenti"
-ab -n 500 -c 25 "$BASE_URL/tickets"
+echo "[2] Test alto: 1000 richieste, 50 concorrenti"
+ab -k -n 1000 -c 50 $URL
 echo
 
-echo "[3] Test alto: 1000 richieste, 50 concorrenti"
-ab -n 1000 -c 50 "$BASE_URL/tickets"
+echo "[3] Test stress: 2000 richieste, 100 concorrenti"
+ab -k -n 2000 -c 100 $URL
 echo
 
-echo "[4] Test stress: 2000 richieste, 100 concorrenti"
-ab -n 2000 -c 100 "$BASE_URL/tickets"
-echo
-
-echo "[5] Test con keep-alive: 1000 richieste, 50 concorrenti"
-ab -k -n 1000 -c 50 "$BASE_URL/tickets"
+echo "[4] Test senza keep-alive: 1000 richieste, 50 concorrenti"
+ab -n 1000 -c 50 $URL
 echo
 
 echo "Load test completato"

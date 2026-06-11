@@ -401,7 +401,7 @@ static int read_input_session(ClientSession* session, const char* prompt, char* 
                                         printf("\n\nMessaggio dal server:\n");
                                         print_response_body(response);
                                 }else {
-                                        printf("\nLa sessione è syaya chiusa dal server.\n");
+                                        printf("\nLa sessione è stata chiusa dal server.\n");
                                 }
                         }else {
                                 printf("\nLa sessione è stata chiusa dal server.\n");

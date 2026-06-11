@@ -57,23 +57,21 @@ echo "[8] Eliminazione ticket $TICKET_ID"
 curl -i -s -X DELETE "$BASE_URL/tickets/$TICKET_ID"
 echo -e "\n"
 
-echo -e "\n"
-
-echo "[10] Rotta inesistente"
+echo "[9] Rotta inesistente"
 curl -i -s "$BASE_URL/rotta_inesistente"
 echo -e "\n"
 
-echo "[11] Metodo non consentito"
+echo "[10] Metodo non consentito"
 curl -i -s -X POST "$BASE_URL/health"
 echo -e "\n"
 
-echo "[12] Body JSON incompleto"
+echo "[11] Body JSON incompleto"
 curl -i -s -X POST "$BASE_URL/tickets" \
 	-H "Content-Type: application/json" \
 	-d '{"title":"Ticket incompleto"}'
 echo -e "\n"
 
-echo "[13] Ticket inesistente"
+echo "[12] Ticket inesistente"
 curl -i -s "$BASE_URL/tickets/999999"
 echo -e "\n"
 
